@@ -1,0 +1,76 @@
+[user]
+  name = Chris Downes
+  email = christopher.downes@intentmedia.com
+[github]
+  user = GITHUB_USER
+  token = GITHUB_TOKEN
+[core]
+	excludesfile = ~/.gitignore
+  # When paging to less:
+  # * -x2 Tabs appear as two spaces
+  # * -S Chop long lines
+  # * -F Don't require interaction if paging less than a full screen
+  # * -X No scren clearing
+  # * -R Raw, i.e. don't escape the control characters that produce colored output
+  pager = less -FXRS -x2
+  whitespace = space-before-tab tab-in-indent trailing-space
+[alias]
+  lol = log --graph --decorate --oneline
+  lola = log --graph --decorate --oneline --all
+  # Log of changes unique to the current branch
+  blog = log origin/master... --left-right
+  # Log with tree output
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  # Full log
+  flog = log --pretty=fuller
+  st = status
+  ds = diff --staged
+  br = branch
+  resethh = reset --hard HEAD
+  commend = commit --amend -C HEAD
+  co = checkout
+  fixup = commit --fixup
+  squash = commit --squash
+  # Show the upstream branch name
+  upstream-branch = rev-parse --symbolic-full-name --abbrev-ref @{u}
+  unstage = reset HEAD
+  # Rebase onto origin/master
+  rum = rebase master@{u}
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[format]
+  # TODO: Sometimes this log format + log lines conflict with the less -F option
+  pretty = %Cred%h%Creset %s %C(bold blue)<%an>%Creset %Cgreen[%ar]%Creset
+[color "branch"]
+  current = green bold
+  local = green
+  remote = red bold
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = green bold
+  changed = yellow bold
+  untracked = red
+[color "sh"]
+  branch = yellow
+[push]
+  # 'git push' should only do the current branch, not all
+  default = current
+[branch]
+  # always setup 'git pull' to rebase instead of merge
+  autosetuprebase = always
+[diff]
+  renames = copies
+  mnemonicprefix = true
+[rerere]
+  enabled = true
+[merge]
+  tool = vimdiff
+[rebase]
+  autosquash = true
