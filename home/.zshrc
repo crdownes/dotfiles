@@ -82,3 +82,5 @@ ${smiley}  %{$reset_color%}'
 RPROMPT='%{$fg[white]%} '
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && RPROMPT+=$(~/.rvm/bin/rvm-prompt)
 RPROMPT+='$(~/.gitfiles/git-cwd-info)%{$reset_color%}'
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

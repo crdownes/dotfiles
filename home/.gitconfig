@@ -61,7 +61,7 @@
   branch = yellow
 [push]
   # 'git push' should only do the current branch, not all
-  default = current
+	default = nothing
 [branch]
   # always setup 'git pull' to rebase instead of merge
   autosetuprebase = always

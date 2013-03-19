@@ -62,7 +62,7 @@ set history=1000
 
 " Color scheme
 set background=dark
-colorscheme railscasts
+"colorscheme railscasts
 
 " Status line
 set statusline=[%n]\ %f\ %m\ %y
