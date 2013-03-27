@@ -1,5 +1,5 @@
 alias im-mysql-master="ssh christopher.downes@ec2-23-20-130-5.compute-1.amazonaws.com"
-alias im-mysql-slave="ssh christopher.downes@ec2-107-22-134-42.compute-1.amazonaws.com"
+alias im-mysql-slave="ssh christopher.downes@ec2-23-20-188-191.compute-1.amazonaws.com"
 alias im-jr="ssh christopher.downes@ec2-204-236-220-253.compute-1.amazonaws.com"
 alias im-skipper="ssh christopher.downes@ec2-184-73-250-129.compute-1.amazonaws.com"
 alias im-ex-lb="ssh christopher.downes@ec2-54-243-152-41.compute-1.amazonaws.com"
