@@ -1,4 +1,6 @@
 alias ll="ls -la"
+alias lt="lt -lat"
+alias pd="pushd"
 alias c="cd ~/Development/code"
 alias e="cd ~/Development/code/extranet"
 alias cuke="bundle exec cucumber -c"
